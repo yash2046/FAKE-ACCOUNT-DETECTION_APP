@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title ba>FAKE ACCOUNT DETECTION</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <!-- <div class="box"> -->
+    <h1>FAKE ACCOUNT DETECTION</h1>
+    <center>
+    <form action="/predict" method="post">
+        <table>
+            <tr>
+                <td>
+                     <label for="screen_name">Screen Name </label>
+                </td>
+                <td>:</td>
+                <td>
+                     <input type="text" id="text2" name="screen_name" placeholder="Enter screen name"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                     <label for="decription">Decription </label>
+                </td>
+                <td>:</td>
+                <td>
+                     <input type="text" id="text2" name="decription" placeholder="Enter description"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                     <label for="followers_count">Followers Count </label>
+                </td>
+                <td>:</td>
+                <td>
+                     <input type="number" id="f_count" name="followers_count" placeholder="Enter followers count" min=0 />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                     <label for="fr_count">Friends Count </label>
+                </td>
+                <td>:</td>
+                <td>
+                       <input type="number" id="fr_count" name="fr_count" placeholder="Enter friends count" min=0 />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                     <label for="l_count">Listed count </label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="number" id="l_count" name="listed_count" placeholder="Enter listed count" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                     <label for="favourites_count">Favourites count </label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="number" id="fav_count" name="favourites_count" placeholder="Enter favourites_count" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                     <label for="verified ">Verified  </label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="text" id="verified " name="verified " placeholder="Enter False if not verified otherwise enter True:" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                     <label for="statuses_count">Statuses count </label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="number" id="stat_count" name="statuses_count" placeholder="Enter statuses count" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                     <label for="default_profile">Default profile </label>
+                </td>
+                <td>:</td>
+                <td>
+                   <input type="text" id="default_profile " name="def_profile " placeholder="Enter False if no default profile otherwise enter True:" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                     <label for="default_profile_image">Default profile image </label>
+                </td>
+                <td>:</td>
+                <td>
+                   <input type="text" id="default_profile_image " name="def_profile_image " placeholder="Enter False if no default profile image otherwise enter True:" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                     <label for="has_extended_profile">Extended profile </label>
+                </td>
+                <td>:</td>
+                <td>
+                   <input type="text" id="has_extended_profile " name="ext_profile " placeholder="Enter False if no extended profile image otherwise enter True:" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                     <label for="name">Name </label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="text" id="text1" name="name" placeholder="Enter name"/>
+                </td>
+            </tr>
+         <tr>
+            <td colspan="10">
+                <input id="btn" type="submit" value="Predict" >
+            </td>
+        </tr>
+        </table>
+        <p>Prediction : {{pred}}</p>
+    </form>
+    </center>
+<!-- </div> -->
+</body>
+</html>
